@@ -535,9 +535,11 @@
     -webkit-backdrop-filter: blur(4px);
     min-height: 100vh;
     min-height: 100dvh;
+    min-height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
     height: 100vh;
     height: 100dvh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
