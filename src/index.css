@@ -529,7 +529,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    /* Remove padding so blur covers the full viewport */
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -545,13 +546,13 @@
   
   @media (min-width: 640px) {
     .modal-container {
-      padding: 1rem;
+      padding: 0;
     }
   }
-  
+
   @media (min-width: 1024px) {
     .modal-container {
-      padding: 2rem;
+      padding: 0;
     }
   }
 
